@@ -22,11 +22,11 @@ function renderLicenseLink(license) {
   let licenseType= license;
   let licenseFile='';
   if(licenseType === 'MIT') {
-    licenseFile = 'https://opensource.org/licenses/MIT';
+    licenseFile = "https://opensource.org/licenses/MIT";
   } else if (licenseType === 'GPLv3') {
-    licenseFile = 'https://www.gnu.org/licenses/agpl-3.0';
+    licenseFile = "https://www.gnu.org/licenses/agpl-3.0";
   } else if (licenseType === 'Apache License 2.0') {
-    licenseFile = 'https://opensource.org/licenses/Apache-2.0';
+    licenseFile = "https://opensource.org/licenses/Apache-2.0";
   } else {
     licenseFile='';
   }
@@ -78,16 +78,18 @@ function generateMarkdown(data) {
 6. [Questions](#questions)
   
   ## Installation
-  
+  To install various dependencies, run the following command:\n
+  ${formatting} 
   ${data.installation}
+  ${formatting} 
 
   ## Usage
   ${data.usage}
 
- ${licenseSection}
+  ${licenseSection}
 
   ## Contributing
-  This project is open for contribution but please initiate an issue for any significant changes. 
+  This project is open for contribution but please initiate an issue for any significant changes. [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Tests
   To run tests, run the following command: 
