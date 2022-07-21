@@ -1,0 +1,23 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshu3011/ReadMeGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshu3011/ReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/Akshu3011/ReadMeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
