@@ -1,13 +1,13 @@
 
-  # Proj1
+  # as
  
-   ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Overview
-  A
+  as
 
   ## Description
-  d
+  s
   
   ## Table of Contents
   
@@ -20,23 +20,26 @@
   
   ## Installation
   
-  d
+  s
 
   ## Usage
-  d
+  s
 
   ## Licenses
-    This project uses the  license. [Licence File]().
+    This project uses the MIT license. More info about licenses can be found [here](https://opensource.org/licenses/MIT)
 
   ## Contributing
   This project is open for contribution but please initiate an issue for any significant changes. 
   
   ## Tests
-  To run tests, run the following command:  
+  To run tests, run the following command: 
+  ` 
   s
+  ` 
+  
 
   ## Questions
-  The developer can be reached through [Email](aa) or contacted through 
-  [Github](https://github.com/a).
+  The developer can be reached through [Email](s) or contacted through 
+  [Github](https://github.com/s).
 
   

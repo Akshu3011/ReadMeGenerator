@@ -19,14 +19,14 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseType= this.license;
+  let licenseType= license;
   let licenseFile='';
   if(licenseType === 'MIT') {
-    licenseFile = `![MIT License]('https://opensource.org/licenses/MIT')`
+    licenseFile = 'https://opensource.org/licenses/MIT';
   } else if (licenseType === 'GPLv3') {
-    licenseFile = `![GPLv3 License]('https://www.gnu.org/licenses/agpl-3.0')`
+    licenseFile = 'https://www.gnu.org/licenses/agpl-3.0';
   } else if (licenseType === 'Apache License 2.0') {
-    licenseFile = `![Apache License]('https://opensource.org/licenses/Apache-2.0')`
+    licenseFile = 'https://opensource.org/licenses/Apache-2.0';
   } else {
     licenseFile='';
   }
@@ -36,22 +36,24 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
- 
- const lic=renderLicenseLink(license)
+ const lic=license;
+ const licenseLink=renderLicenseLink(license);
   if(license!='None')
   {
     return ` ## Licenses
-    This project uses the ${lic} license. [Licence File](${lic}).`
+    This project uses the ${lic} license. More info about licenses can be found [here](${licenseLink})`
   
   }
   else
     return '';
 }
 
+const formatting="`";
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
   const badge=renderLicenseBadge(data.licenses);
+  
   const licenseSection=renderLicenseSection(data.licenses);
 
 
@@ -88,8 +90,11 @@ function generateMarkdown(data) {
   This project is open for contribution but please initiate an issue for any significant changes. 
   
   ## Tests
-  To run tests, run the following command:  
+  To run tests, run the following command: 
+  ${formatting} 
   ${data.tests}
+  ${formatting} 
+  
 
   ## Questions
   The developer can be reached through [Email](${data.email}) or contacted through 
